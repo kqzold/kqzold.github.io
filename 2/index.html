@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Hosting</title>
+    <meta name="description" content="A platform to host and share videos" />
+    <meta name="keywords" content="video, hosting, share, upload"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+
+        <header class="header">
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">Video Hosting</a></h1>
+                    <h2>Share your videos with the world!</h2>
+                </div>  
+            </div>
+
+            <nav class="menubar"> 
+                <ul class="menu">
+                    <li class="selected"> <a href="index.html">Home</a></li>
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="language-switcher">
+                    <li><a href="index.html">EN</a></li>
+                    <li><a href="index_ru.html">RU</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="site_content">
+            <aside class="sidebar_container">
+                <div class="sidebar">
+                    <h2>Search</h2>
+                    <form method="post" action="#" id="search_form">
+                        <input type="search" name="search_field" placeholder="your query"/>
+                        <input type="submit" class="btn" value="search"/>
+                    </form>
+                </div>
+
+                <section class="login">
+                    <h1>Login</h1>
+                    <form action="/login" method="post">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <br>
+                        <button type="submit">Login</button>
+                    </form>
+                </section>
+
+                <div class="sidebar">
+                    <h2>Latest News</h2>
+                    <span>31.02.2023</span>
+                    <p>We have launched an advanced search feature</p>
+                    <a href="#">Read more</a>
+                </div>
+            </aside>
+
+            <article class="content">
+                <h1>Trending Videos</h1>
+                <iframe width="560" height="315" src="https://youtube.com/embed/6osJYjs1TRE" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://youtube.com/embed/3f1N2bsIQqc" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://youtube.com/embed/MesWtDPzFLA" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://youtube.com/embed/pyC_qiW_4ZY" frameborder="0" allowfullscreen></iframe>
+
+                <h1>Categories</h1>
+                <div class="categories_block"> 
+                    <a href="gaming.html"><img src="/photos/gaming.png" alt="Category 1"></a>
+                    <a href="irl.html"><img src="/photos/irl.png" alt="Category 2"></a>
+                    <a href="sports.html"><img src="/photos/sports.png" alt="Category 3"></a>
+                    <a href="news.html"><img src="/photos/news.png" alt="Category 4"></a>
+                </div>
+
+                <div class="posts">
+                    <hr>
+                    <h2><a href="#">How to Create Engaging Videos</a></h2>
+                    <div class="posts_content">
+                        <p>Learn the secrets to creating engaging videos that capture your audience's attention...</p>
+                    </div>
+                    <p><a href="#">Read more</a></p>
+                    <hr>
+                    <h2><a href="#">Top 10 Video Editing Tools</a></h2>
+                    <div class="posts_content">
+                        <p>Discover the top 10 video editing tools that can help you create professional-quality videos...</p>
+                    </div>
+                    <p><a href="#">Read more</a></p>
+                </div>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <p>
+                <a href="index.html">Home</a>
+                <a href="trending.html">Trending</a>
+                <a href="categories.html">Categories</a>
+                <a href="upload.html">Upload</a>
+                <a href="contact.html">Contact</a>
+            </p>
+            <p>videohosting.com</p>
+        </footer>
+    </main>
+</body>
+</html>

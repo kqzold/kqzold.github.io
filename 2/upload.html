@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Video</title>
+    <meta name="description" content="Upload your videos to our platform" />
+    <meta name="keywords" content="video, upload, share"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+
+        <header class="header">
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">Video Hosting</a></h1>
+                    <h2>Share your videos with the world!</h2>
+                </div>  
+            </div>
+
+            <nav class="menubar"> 
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li class="selected"><a href="upload.html">Upload</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="language-switcher">
+                    <li><a href="upload.html">EN</a></li>
+                    <li><a href="upload_ru.html">RU</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="site_content">
+            <h2>Upload Your Video</h2>
+            <div class="upload_form">
+                <form action="upload_video.php" method="post" enctype="multipart/form-data">
+                    <label for="video_title">Video Title:</label>
+                    <input type="text" id="video_title" name="video_title" required><br><br>
+                    
+                    <label for="video_description">Description:</label>
+                    <textarea id="video_description" name="video_description" required></textarea><br><br>
+                    
+                    <label for="video_file">Select video to upload:</label>
+                    <input type="file" id="video_file" name="video_file" accept="video/*" required><br><br>
+                    
+                    <input type="submit" value="Upload Video" name="submit">
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2023 Video Hosting. All rights reserved.</p>
+        </footer>
+
+    </main>
+</body>
+</html>

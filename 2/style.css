@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.2em;
+    background-color: #ffff;
+    color: #555;
+}
+
+p {
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+}
+
+input[type="text"], input[type="password"], input[type="search"], input[type="file"], textarea {
+    color: #5d5d5d;
+    width: 60%;
+    padding: 8px;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+    border: solid 1px #f2f2f2;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #aeb002;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+h1, h2 {
+    font: normal 170% 'century gothic', arial;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+    color: #000;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+a, a:hover {
+    outline: none;
+    text-decoration: underline;
+    color: #aeb002;
+}
+
+ul {
+    margin: 2px 0 22px 17px;
+}
+
+ul li {
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    line-height: 1.5em;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+
+.header .logo {
+    text-align: center;
+}
+
+.header .logo_text h1, .header .logo_text h2 {
+    margin: 0;
+}
+
+.menubar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menubar ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menubar ul.menu li {
+    display: inline;
+    padding: 14px 20px;
+}
+
+.menubar ul.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menubar ul.menu li.selected a {
+    background-color: #aeb002;
+}
+
+.menubar ul.language-switcher {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menubar ul.language-switcher li {
+    display: inline;
+    padding: 14px 20px;
+}
+
+.menubar ul.language-switcher li a {
+    color: white;
+    text-decoration: none;
+}
+
+.site_content {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.post .post_content {
+    font-size: 0.8em;
+}
+
+.info_film_page {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.info_film_page .label {
+    font-size: 1.2em;
+}
+
+.info_film_page .value {
+    font-size: 1em;
+    color: #49945a;
+    margin-right: 3%;
+}
+
+.decriptions_film {
+    margin-bottom: 15%;
+}
+
+.decriptions_film img {
+    float: left;
+    margin-right: 2%;
+    border-radius: 5px;
+    border: solid 5px #dad7d5;
+}
+
+.language-switcher {
+    top: 10px; 
+    right: 10px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.language-switcher li {
+    display: inline;
+    margin-left: 10px; 
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: #ffffff; 
+}
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(25% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.category a {
+    text-decoration: none;
+    color: inherit;
+}
+.category img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.category h3 {
+    margin: 10px 0;
+    color: #aeb002;
+}
+
+.category p {
+    color: #555;
+}
+.trending_videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.video {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video p {
+    color: #555;
+}
+.gaming_info {
+    padding: 20px;
+}
+
+.gaming_description {
+    margin-bottom: 20px;
+}
+
+.gaming_videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.video {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video p {
+    color: #555;
+}
+
+.gaming_images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.gaming_images img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.irl_info {
+    padding: 20px;
+}
+
+.irl_description {
+    margin-bottom: 20px;
+}
+
+.irl_videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.video {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video p {
+    color: #555;
+}
+
+.irl_images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.irl_images img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sports_info {
+    padding: 20px;
+}
+
+.sports_description {
+    margin-bottom: 20px;
+}
+
+.sports_videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.video {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video p {
+    color: #555;
+}
+
+.sports_images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.sports_images img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.news_info {
+    padding: 20px;
+}
+
+.news_description {
+    margin-bottom: 20px;
+}
+
+.news_videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.video {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video p {
+    color: #555;
+}
+
+.news_images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.news_images img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+    .post .post_content {
+        font-size: 1em;
+    }
+    
+    .info_film_page {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    
+    .info_film_page .label {
+        font-size: 1.5em;
+    }
+    
+    .info_film_page .value {
+        font-size: 1.3em;
+        margin-right: 0;
+    }
+    
+    .decriptions_film {
+        margin-bottom: 20%;
+    }
+    
+    .decriptions_film img {
+        float: none;
+        display: block;
+        margin: 0 auto 2% auto;
+        width: 100%;
+        border-radius: 5px;
+        border: solid 3px #dad7d5;
+    }
+    
+    .language-switcher {
+        top: 5px; 
+        right: 5px;
+    }
+    
+    .language-switcher li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 5px; 
+    }
+
+    .categories {
+        gap: 10px;
+    }
+
+    .category {
+        width: calc(50% - 10px);
+    }
+
+}

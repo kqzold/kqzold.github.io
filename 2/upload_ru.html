@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузить Видео</title>
+    <meta name="description" content="Загрузите свои видео на нашу платформу" />
+    <meta name="keywords" content="видео, загрузка, делиться"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+
+        <header class="header">
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index_ru.html">Видео Хостинг</a></h1>
+                    <h2>Делитесь своими видео с миром!</h2>
+                </div>  
+            </div>
+
+            <nav class="menubar"> 
+                <ul class="menu">
+                    <li><a href="index_ru.html">Главная</a></li>
+                    <li><a href="trending_ru.html">Популярные</a></li>
+                    <li><a href="categories_ru.html">Категории</a></li>
+                    <li class="selected"><a href="upload_ru.html">Загрузить</a></li>
+                    <li><a href="contact_ru.html">Контакты</a></li>
+                </ul>
+                <ul class="language-switcher">
+                    <li><a href="upload.html">EN</a></li>
+                    <li><a href="upload_ru.html">RU</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="site_content">
+            <h2>Загрузите Ваше Видео</h2>
+            <div class="upload_form">
+                <form action="upload_video.php" method="post" enctype="multipart/form-data">
+                    <label for="video_title">Название Видео:</label>
+                    <input type="text" id="video_title" name="video_title" required>
+                    <label for="video_description">Описание Видео:</label>
+                    <textarea id="video_description" name="video_description" required></textarea>
+                    <label for="video_file">Выберите Видео:</label>
+                    <input type="file" id="video_file" name="video_file" accept="video/*" required>
+                    <input type="submit" value="Загрузить">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

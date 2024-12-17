@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Видео Хостинг</title>
+    <meta name="description" content="Добро пожаловать на наш видео хостинг" />
+    <meta name="keywords" content="видео, хостинг, делиться, смотреть"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+
+        <header class="header">
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index_ru.html">Видео Хостинг</a></h1>
+                    <h2>Делитесь своими видео с миром!</h2>
+                </div>  
+            </div>
+
+            <nav class="menubar"> 
+                <ul class="menu">
+                    <li class="selected"><a href="index_ru.html">Главная</a></li>
+                    <li><a href="trending_ru.html">В тренде</a></li>
+                    <li><a href="categories_ru.html">Категории</a></li>
+                    <li><a href="upload_ru.html">Загрузить</a></li>
+                    <li><a href="contact_ru.html">Контакты</a></li>
+                </ul>
+                <ul class="language-switcher">
+                    <li><a href="index.html">EN</a></li>
+                    <li><a href="index_ru.html">RU</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="site_content">
+            <aside class="sidebar_container">
+                <div class="sidebar">
+                    <h2>Поиск</h2>
+                    <form method="post" action="#" id="search_form">
+                        <input type="search" name="search_field" placeholder="ваш запрос"/>
+                        <input type="submit" class="btn" value="поиск"/>
+                    </form>
+                </div>
+
+                <section class="login">
+                    <h1>Вход</h1>
+                    <form action="/login" method="post">
+                        <label for="username">Имя пользователя:</label>
+                        <input type="text" id="username" name="username" required>
+                        <br>
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required>
+                        <br>
+                        <button type="submit">Вход</button>
+                    </form>
+                </section>
+
+                <div class="sidebar">
+                    <h2>Последние новости</h2>
+                    <span>31.02.2023</span>
+                    <p>Мы запустили расширенный поиск</p>
+                    <a href="#">Читать далее</a>
+                </div>
+            </aside>
+
+            <article class="content">
+                <h1>В тренде</h1>
+                <h1>Трендовые видео</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6osJYjs1TRE" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3f1N2bsIQqc" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MesWtDPzFLA" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pyC_qiW_4ZY" frameborder="0" allowfullscreen></iframe>
+
+
+                <<h1>Категории</h1>
+                <div class="categories_block"> 
+                    <a href="#"><img src="/photos/gaming.png" alt="Category 1"></a>
+                    <a href="#"><img src="/photos/irl.png" alt="Category 2"></a>
+                    <a href="#"><img src="/photos/sports.png" alt="Category 3"></a>
+                    <a href="#"><img src="/photos/news.png" alt="Category 4"></a>
+                </div>
+
+                <div class="posts">
+                    <hr>
+                    <h2><a href="#">Как создавать привлекательные игры</a></h2>
+                    <div class="posts_content">
+                        <p>Узнайте секреты создания привлекательных видеороликов, которые привлекут внимание вашей аудитории...</p>
+                    </div>
+                    <p><a href="#">Читать далее</a></p>
+                    <hr>
+                    <h2><a href="#">10 лучших инструментов для редактирования видео</a></h2>
+                    <div class="posts_content">
+                        <p>Откройте для себя 10 лучших инструментов для редактирования видео, которые помогут вам создавать видеоролики профессионального качества...</p>
+                    </div>
+                    <p><a href="#">Читать далее</a></p>
+                </div>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <p>
+                <a href="index.html">Главная</a>
+                <a href="trending.html">В тренде</a>
+                <a href="categories.html">Категории</a>
+                <a href="upload.html">Загрузить</a>
+                <a href="contact.html">Контакты</a>
+            </p>
+            <p>videohosting.com</p>
+        </footer>
+    </main>
+</body>
+</html>
