@@ -1,161 +1,218 @@
-/* Общие стили */
+/* Общие настройки */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
-/* Стиль для HTML и Body */
-html, body {
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px; /* Уменьшено для лучшей адаптивности */
-    color: #ffffff;
-    background: #27353f;
-    height: 100%; /* Важный элемент для Flexbox */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Flexbox для фиксации футера */
-    flex-direction: column; /* Устанавливаем вертикальное направление */
-    background-image: url('back.jpg'); /* Картинка для ПК */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f8f9fa;
 }
 
-/* Header стили */
-header {
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(50, 53, 63, 0.6); /* Прозрачный фон для читаемости */
-    font-size: 2em;
-    color: #e7e3e3;
-}
-
-/* Основной раздел */
 main {
-    padding: 20px;
-    flex: 1; /* Этот элемент занимает оставшееся пространство */
+    flex: 1;
 }
 
-/* Карточки проектов */
+/* Header */
+header {
+    background: #000;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+header h1 {
+    position: relative;
+    display: inline-block;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: background-position 0.5s ease;
+}
+
+header h1:hover {
+    background-position: 100%;
+}
+
+/* Main Content */
+.container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Cards */
 .card {
-    background-color: rgba(126, 189, 235, 0.9);
-    border: 1px solid #706665;
-    border-radius: 10px;
-    color: #ffffff;
-    transition: transform 0.2s;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card-title {
-    color: #ddd2d1;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.75rem;
 }
 
 .card-text {
-    color: #ffffff;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
 }
 
-.card a.btn-primary {
-    background-color: #706665;
-    border-color: #706665;
+/* Gradient Button */
+.gradient-btn {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Consolas', 'Courier New', monospace;
+    border: solid #404c5d 1px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+                inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    text-decoration: none;
+    text-align: center;
 }
 
-.card a.btn-primary:hover {
-    background-color: #ff776c;
-    border-color: #ff776c;
+.gradient-btn:hover {
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    transform: translateY(-2px);
+}
+
+.gradient-btn:active {
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    transform: translateY(0);
+}
+
+/* Bootstrap Button Override */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #2e2d2d;
+    border: 1px solid #404c5d;
+}
+
+.dropdown-item {
+    color: #ccc;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #404c5d;
+    color: #fff;
 }
 
 /* Footer */
 footer {
-    background: transparent !important; /* Убираем серый цвет полностью */
-    color: #ffffff; /* Белый цвет текста */
+    background: #333;
+    color: #ccc;
+    padding: 2rem 0;
     text-align: center;
-    padding: 1.5rem; /* Увеличиваем отступы */
-    font-size: 1.1em; /* Увеличиваем размер текста */
-    margin-top: auto;
-    position: relative; /* Изменено с absolute */
-    bottom: auto; /* Убираем фиксированное положение */
-    width: 100%;
-    z-index: 10;
+    border-top: 3px solid #41077f;
 }
 
-/* Ссылки в футере */
-footer a {
-    color: #ff574c;
+footer a#mailme {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
     text-decoration: none;
-    font-size: 1.2em; /* Увеличиваем размер ссылки */
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    color: #fff;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
-footer a:hover {
-    color: #ff776c;
-    text-decoration: underline;
+footer a#mailme:hover {
+    background: #a49dad;
+    color: #fff;
+    border-color: #f7f2fc;
+    transform: translateY(-2px);
 }
 
-/* Адаптивность */
-@media (max-width: 768px) {
-    html, body {
-        background-image: none; /* Убираем фон на мобильной версии */
-        background-color: #738bd8; /* Устанавливаем однотонный цвет вместо картинки */
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-
-    footer {
-        font-size: 1.2em; /* Еще больше увеличиваем текст на мобильных */
-        padding: 1.5rem; /* Сохраняем отступы для гармоничности */
-        background: transparent !important; /* Полностью убираем серый цвет */
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@media (max-width: 480px) {
-    html, body {
-        font-size: 14px; /* Уменьшение базового размера шрифта на очень маленьких экранах */
-        background-image: none; /* Убираем фон на очень маленьких экранах */
-        background-color: #27353f; /* Цвет фона для мобильных устройств */
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.75rem;
     }
 
-    header {
-        font-size: 1.2em;
-        padding: 10px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    footer {
-        font-size: 1em;
-        padding: 0.5rem;
-        background: transparent !important; /* Прозрачность аналогична десктопной версии */
+    .gradient-btn {
+        font-size: 14px;
+        height: 45px;
+        padding: 8px 12px;
     }
 
     .card-title {
-        font-size: 1.2em;
-    }
-
-    .card a.btn-primary {
-        padding: 6px 12px;
-    }
-}
-
-/* Карточки проектов */
-@media (max-width: 768px) {
-    .card {
-        max-width: 100%; /* Карточки занимают всю ширину на мобильных */
-        padding: 10px;
-        margin-bottom: 20px; /* Добавляем отступ снизу между карточками */
-    }
-
-    .card-title {
-        font-size: 1.3em;
+        font-size: 1.1rem;
     }
 
     .card-text {
-        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        font-size: 18px;
     }
 
-    .card a.btn-primary {
-        padding: 8px 16px;
+    .card-title {
+        font-size: 1.35rem;
+    }
+
+    .card-text {
+        font-size: 1.05rem;
     }
 }
